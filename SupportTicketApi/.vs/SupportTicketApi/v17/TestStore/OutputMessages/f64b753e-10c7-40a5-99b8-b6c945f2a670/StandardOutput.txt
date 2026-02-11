@@ -1,0 +1,1268 @@
+dbug: Aspire.Hosting.DeveloperCertificateService[0]
+      Developer certificate HTTPS/TLS termination support: True
+info: Aspire.Hosting.DistributedApplication[0]
+      Aspire version: 13.1.0+8a4db1775c3fbae1c602022b636299cb04971fde
+info: Aspire.Hosting.DistributedApplication[0]
+      Distributed application starting.
+info: Aspire.Hosting.DistributedApplication[0]
+      Application host directory is: C:\grmn\learning\Aspire\aspire-docs-samples\SupportTicketApi\SupportTicketApi.AppHost
+dbug: Aspire.Hosting.Cli.BackchannelService[0]
+      Backchannel socket path was not specified.
+dbug: Aspire.Hosting.Backchannel.AuxiliaryBackchannelService[0]
+      Starting auxiliary backchannel service on socket path: C:\Users\giriganalexan\.aspire\cli\backchannels\aux.sock.9a751fc53ec5c43a
+dbug: Aspire.Hosting.Backchannel.AuxiliaryBackchannelService[0]
+      Auxiliary backchannel listening on C:\Users\giriganalexan\.aspire\cli\backchannels\aux.sock.9a751fc53ec5c43a
+dbug: Aspire.Hosting.FileSystemService[0]
+      Allocated temporary directory: C:\Users\giriganalexan\AppData\Local\Temp\aspire-dcpuidmy4mw.sld
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource api/api-vkwbrmem changed state: Starting
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource sql/sql-ewxxcxkt changed state: Starting
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource sqldata/sqldata changed state: Starting
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource api/api-vkwbrmem changed state: Starting -> Waiting
+info: SupportTicketApi.AppHost.Resources.api[0]
+      1: 2026-02-11T08:00:34.5114633Z Waiting for resource 'sql' to enter the 'Running' state.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      2: 2026-02-11T08:00:34.5225204Z Waiting for resource 'sqldata' to enter the 'Running' state.
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Waiting for resource 'api' to match predicate.
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource sql/sql-ewxxcxkt changed state: Starting
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource sqldata/sqldata changed state: Starting
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      1: 2026-02-11T08:00:34.7340000Z 8e3da3238140036bccfcd551dde1718768f05c38feae02cd7ff3ee7fa9bc70b5
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource sql/sql-ewxxcxkt changed state: Starting -> Running
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource sqldata/sqldata changed state: Starting -> Running
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      2: [sys] Added new ContainerNetworkConnection: ContainerName = sql-ewxxcxkt
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Starting health monitoring for resource 'sql'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Starting health monitoring for resource 'sqldata'.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      3: 2026-02-11T08:00:36.9001818Z Waiting for resource 'sql' to become healthy.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      4: 2026-02-11T08:00:36.9001819Z Waiting for resource 'sqldata' to become healthy.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Resource 'sql' health checks to monitor: sql_check
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Resource 'sqldata' health checks to monitor: sqldata_check, sql_check
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      3: 2026-02-11T08:00:36.5667966Z SQL Server 2022 will run as non-root by default.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      4: 2026-02-11T08:00:36.5668279Z This container is running as user mssql.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      5: 2026-02-11T08:00:36.5668307Z To learn more visit https://go.microsoft.com/fwlink/?linkid=2099216.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      6: 2026-02-11T08:00:42.0011162Z 2026-02-11 08:00:41.97 Server      Setup step is copying system data file 'C:\templatedata\master.mdf' to '/var/opt/mssql/data/master.mdf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      7: 2026-02-11T08:00:42.0252627Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      8: 2026-02-11 08:00:42.02 Server      Did not find an existing master data file /var/opt/mssql/data/master.mdf, copying the missing default master and other system database files. If you have moved the database location, but not moved the database files, startup may fail. To repair: shutdown SQL Server, move the master database to configured location, and restart.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      9: 2026-02-11T08:00:42.0269872Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      10: 2026-02-11 08:00:42.02 Server      Setup step is copying system data file 'C:\templatedata\mastlog.ldf' to '/var/opt/mssql/data/mastlog.ldf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      11: 2026-02-11T08:00:42.0321196Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      12: 2026-02-11 08:00:42.03 Server      Setup step is copying system data file 'C:\templatedata\model.mdf' to '/var/opt/mssql/data/model.mdf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      13: 2026-02-11T08:00:42.0529507Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      14: 2026-02-11 08:00:42.05 Server      Setup step is copying system data file 'C:\templatedata\modellog.ldf' to '/var/opt/mssql/data/modellog.ldf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      15: 2026-02-11T08:00:42.0733766Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      16: 2026-02-11 08:00:42.07 Server      Setup step is copying system data file 'C:\templatedata\msdbdata.mdf' to '/var/opt/mssql/data/msdbdata.mdf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      17: 2026-02-11T08:00:42.1036336Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      18: 2026-02-11 08:00:42.10 Server      Setup step is copying system data file 'C:\templatedata\msdblog.ldf' to '/var/opt/mssql/data/msdblog.ldf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      19: 2026-02-11T08:00:42.1103024Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      20: 2026-02-11 08:00:42.10 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_replicatedmaster.mdf' to '/var/opt/mssql/data/model_replicatedmaster.mdf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      21: 2026-02-11T08:00:42.1225920Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      22: 2026-02-11 08:00:42.12 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_replicatedmaster.ldf' to '/var/opt/mssql/data/model_replicatedmaster.ldf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      23: 2026-02-11T08:00:42.1282473Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      24: 2026-02-11 08:00:42.12 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_msdbdata.mdf' to '/var/opt/mssql/data/model_msdbdata.mdf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      25: 2026-02-11T08:00:42.1544354Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      26: 2026-02-11 08:00:42.15 Server      Setup step is FORCE copying system data file 'C:\templatedata\model_msdblog.ldf' to '/var/opt/mssql/data/model_msdblog.ldf'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      27: 2026-02-11T08:00:42.1888059Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      28: 2026-02-11 08:00:42.18 Server      Microsoft SQL Server 2022 (RTM-CU23) (KB5078297) - 16.0.4236.2 (X64) 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      29: 2026-02-11T08:00:42.1889730Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      30: 	Jan 22 2026 17:50:56 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      31: 2026-02-11T08:00:42.1894857Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      32: 	Copyright (C) 2022 Microsoft Corporation
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      33: 2026-02-11T08:00:42.1903477Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      34: 	Developer Edition (64-bit) on Linux (Ubuntu 22.04.5 LTS) <X64>
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      35: 2026-02-11T08:00:42.1911389Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      36: 2026-02-11 08:00:42.19 Server      UTC adjustment: 0:00
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      37: 2026-02-11T08:00:42.1918302Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      38: 2026-02-11 08:00:42.19 Server      (c) Microsoft Corporation.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      39: 2026-02-11T08:00:42.1925626Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      40: 2026-02-11 08:00:42.19 Server      All rights reserved.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      41: 2026-02-11T08:00:42.1934058Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      42: 2026-02-11 08:00:42.19 Server      Server process ID is 508.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      43: 2026-02-11T08:00:42.1947382Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      44: 2026-02-11 08:00:42.19 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      45: 2026-02-11T08:00:42.1953577Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      46: 2026-02-11 08:00:42.19 Server      Registry startup parameters: 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      47: 2026-02-11T08:00:42.1958108Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      48: 	 -d /var/opt/mssql/data/master.mdf
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      49: 2026-02-11T08:00:42.1961494Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      50: 	 -l /var/opt/mssql/data/mastlog.ldf
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      51: 2026-02-11T08:00:42.1965598Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      52: 	 -e /var/opt/mssql/log/errorlog
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      53: 2026-02-11T08:00:42.1998540Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      54: 2026-02-11 08:00:42.19 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      55: 2026-02-11T08:00:42.2015545Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      56: 2026-02-11 08:00:42.20 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      57: 2026-02-11T08:00:42.2042094Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      58: 2026-02-11 08:00:42.20 Server      Detected 12683 MB of RAM, 12238 MB of available memory, 12238 MB of available page file. This is an informational message; no user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      59: 2026-02-11T08:00:42.2056374Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      60: 2026-02-11 08:00:42.20 Server      Using conventional memory in the memory manager.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      61: 2026-02-11T08:00:42.2074787Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      62: 2026-02-11 08:00:42.20 Server      Detected pause instruction latency: 24 cycles.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      63: 2026-02-11T08:00:42.2100129Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      64: 2026-02-11 08:00:42.20 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x0000000000000fff).
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      65: 2026-02-11T08:00:42.2262408Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      66: 2026-02-11 08:00:42.22 Server      Page exclusion bitmap is enabled.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      67: 2026-02-11T08:00:42.2836056Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      68: 2026-02-11 08:00:42.28 Server      Buffer pool extension is not supported on Linux platform.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      69: 2026-02-11T08:00:42.2929558Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      70: 2026-02-11 08:00:42.29 Server      Buffer Pool: Allocating 16777216 bytes for 1956931 hashPages.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      71: 2026-02-11T08:00:42.4480273Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      72: 2026-02-11 08:00:42.44 Server      Buffer pool extension is already disabled. No action is necessary.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      73: 2026-02-11T08:00:42.9547409Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      74: 2026-02-11 08:00:42.95 Server      Installing Client TLS certificates to the store.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      75: 2026-02-11T08:00:42.9656358Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      76: 2026-02-11 08:00:42.96 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      77: 2026-02-11T08:00:43.0328693Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      78: 2026-02-11 08:00:43.02 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      79: 2026-02-11T08:00:43.0556025Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      80: 2026-02-11 08:00:43.05 Server      Query Store settings initialized with enabled = 1, 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      81: 2026-02-11T08:00:43.0700366Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      82: 2026-02-11 08:00:43.06 Server      The maximum number of dedicated administrator connections for this instance is '1'
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      83: 2026-02-11T08:00:43.0799091Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      84: 2026-02-11 08:00:43.07 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      85: 2026-02-11T08:00:43.1066195Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      86: 2026-02-11 08:00:43.10 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      87: 2026-02-11T08:00:43.1417664Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      88: 2026-02-11 08:00:43.13 Server      In-Memory OLTP initialized on standard machine.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      89: 2026-02-11T08:00:43.1650899Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      90: 2026-02-11 08:00:43.16 Server      [INFO] Created Extended Events session 'hkenginexesession'
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      91: 2026-02-11T08:00:43.1700760Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      92: 2026-02-11 08:00:43.16 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      93: 2026-02-11T08:00:43.1788051Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      94: ForceFlush is enabled for this instance. 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      95: 2026-02-11T08:00:43.1830752Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      96: 2026-02-11 08:00:43.17 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      97: 2026-02-11T08:00:43.1918892Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      98: 2026-02-11 08:00:43.18 Server      clflushopt is selected for pmem flush operation.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      99: 2026-02-11T08:00:43.1964412Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      100: 2026-02-11 08:00:43.19 Server      Software Usage Metrics is disabled.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      101: 2026-02-11T08:00:43.2072333Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      102: Failed to open password policy registry path. Using default password policy values.2026-02-11 08:00:43.20 Server      CLR version v4.0.30319 loaded.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      103: 2026-02-11T08:00:43.2124559Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      104: 2026-02-11 08:00:43.20 spid35s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      105: 2026-02-11T08:00:43.2151215Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      106: 2026-02-11 08:00:43.21 spid35s     Starting up database 'master'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      107: 2026-02-11T08:00:43.2445477Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      108: ForceFlush feature is enabled for log durability.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      109: 2026-02-11T08:00:43.3519602Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      110: 2026-02-11 08:00:43.34 spid35s     Converting database 'master' from version 927 to the current version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      111: 2026-02-11T08:00:43.3540251Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      112: 2026-02-11 08:00:43.34 spid35s     Database 'master' running the upgrade step from version 927 to version 928.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      113: 2026-02-11T08:00:43.4054474Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      114: 2026-02-11 08:00:43.40 spid35s     Database 'master' running the upgrade step from version 928 to version 929.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      115: 2026-02-11T08:00:43.4279480Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      116: 2026-02-11 08:00:43.42 spid35s     Database 'master' running the upgrade step from version 929 to version 930.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      117: 2026-02-11T08:00:43.4455100Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      118: 2026-02-11 08:00:43.44 spid35s     Database 'master' running the upgrade step from version 930 to version 931.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      119: 2026-02-11T08:00:43.4564123Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      120: 2026-02-11 08:00:43.45 spid35s     Database 'master' running the upgrade step from version 931 to version 932.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      121: 2026-02-11T08:00:43.4668058Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      122: 2026-02-11 08:00:43.46 spid35s     Database 'master' running the upgrade step from version 932 to version 933.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      123: 2026-02-11T08:00:43.4785756Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      124: 2026-02-11 08:00:43.47 spid35s     Database 'master' running the upgrade step from version 933 to version 934.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      125: 2026-02-11T08:00:43.4917623Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      126: 2026-02-11 08:00:43.48 spid35s     Database 'master' running the upgrade step from version 934 to version 935.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      127: 2026-02-11T08:00:43.5211397Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      128: 2026-02-11 08:00:43.51 spid35s     Database 'master' running the upgrade step from version 935 to version 936.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      129: 2026-02-11T08:00:43.5300570Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      130: 2026-02-11 08:00:43.52 spid35s     Database 'master' running the upgrade step from version 936 to version 937.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      131: 2026-02-11T08:00:43.5416755Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      132: 2026-02-11 08:00:43.53 spid35s     Database 'master' running the upgrade step from version 937 to version 938.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      133: 2026-02-11T08:00:43.5523132Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      134: 2026-02-11 08:00:43.54 spid35s     Database 'master' running the upgrade step from version 938 to version 939.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      135: 2026-02-11T08:00:43.5650527Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      136: 2026-02-11 08:00:43.56 spid35s     Database 'master' running the upgrade step from version 939 to version 940.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      137: 2026-02-11T08:00:43.5764289Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      138: 2026-02-11 08:00:43.57 spid35s     Database 'master' running the upgrade step from version 940 to version 941.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      139: 2026-02-11T08:00:43.5883434Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      140: 2026-02-11 08:00:43.58 spid35s     Database 'master' running the upgrade step from version 941 to version 942.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      141: 2026-02-11T08:00:43.6002988Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      142: 2026-02-11 08:00:43.59 Server      Common language runtime (CLR) functionality initialized.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      143: 2026-02-11T08:00:43.6019250Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      144: 2026-02-11 08:00:43.59 spid35s     Database 'master' running the upgrade step from version 942 to version 943.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      145: 2026-02-11T08:00:43.6405229Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      146: 2026-02-11 08:00:43.63 spid35s     Database 'master' running the upgrade step from version 943 to version 944.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      147: 2026-02-11T08:00:43.6509541Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      148: 2026-02-11 08:00:43.64 spid35s     Database 'master' running the upgrade step from version 944 to version 945.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      149: 2026-02-11T08:00:43.6680063Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      150: 2026-02-11 08:00:43.66 spid35s     Database 'master' running the upgrade step from version 945 to version 946.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      151: 2026-02-11T08:00:43.6840178Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      152: 2026-02-11 08:00:43.68 spid35s     Database 'master' running the upgrade step from version 946 to version 947.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      153: 2026-02-11T08:00:43.6950847Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      154: 2026-02-11 08:00:43.69 spid35s     Database 'master' running the upgrade step from version 947 to version 948.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      155: 2026-02-11T08:00:43.7073975Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      156: 2026-02-11 08:00:43.70 spid35s     Database 'master' running the upgrade step from version 948 to version 949.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      157: 2026-02-11T08:00:43.7207122Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      158: 2026-02-11 08:00:43.71 spid35s     Database 'master' running the upgrade step from version 949 to version 950.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      159: 2026-02-11T08:00:43.7560984Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      160: 2026-02-11 08:00:43.75 spid35s     Database 'master' running the upgrade step from version 950 to version 951.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      161: 2026-02-11T08:00:43.7762749Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      162: 2026-02-11 08:00:43.77 spid35s     Database 'master' running the upgrade step from version 951 to version 952.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      163: 2026-02-11T08:00:43.7882075Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      164: 2026-02-11 08:00:43.78 spid35s     Database 'master' running the upgrade step from version 952 to version 953.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      165: 2026-02-11T08:00:43.8034999Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      166: 2026-02-11 08:00:43.79 spid35s     Database 'master' running the upgrade step from version 953 to version 954.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      167: 2026-02-11T08:00:43.8133360Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      168: 2026-02-11 08:00:43.80 spid35s     Database 'master' running the upgrade step from version 954 to version 955.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      169: 2026-02-11T08:00:43.8239389Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      170: 2026-02-11 08:00:43.81 spid35s     Database 'master' running the upgrade step from version 955 to version 956.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      171: 2026-02-11T08:00:43.8541907Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      172: 2026-02-11 08:00:43.85 spid35s     Database 'master' running the upgrade step from version 956 to version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      173: 2026-02-11T08:00:43.9580966Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      174: 2026-02-11 08:00:43.95 spid38s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      175: 2026-02-11T08:00:43.9616264Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      176: 2026-02-11 08:00:43.95 spid38s     Starting up database 'mssqlsystemresource'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      177: 2026-02-11T08:00:43.9632708Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      178: 2026-02-11 08:00:43.95 spid45s     Password policy update was successful.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      179: 2026-02-11T08:00:43.9725042Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      180: 2026-02-11 08:00:43.96 spid38s     The resource database build version is 16.00.4236. This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      181: 2026-02-11T08:00:43.9990690Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      182: 2026-02-11 08:00:43.99 spid35s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      183: 2026-02-11T08:00:44.0016886Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      184: 2026-02-11 08:00:43.99 spid35s     Starting up database 'model_replicatedmaster'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      185: 2026-02-11T08:00:44.0080099Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      186: 2026-02-11 08:00:44.00 spid38s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      187: 2026-02-11T08:00:44.0099391Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      188: 2026-02-11 08:00:44.00 spid38s     Starting up database 'model'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      189: 2026-02-11T08:00:44.0835731Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      190: 2026-02-11 08:00:44.08 spid38s     Converting database 'model' from version 927 to the current version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      191: 2026-02-11T08:00:44.0854553Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      192: 2026-02-11 08:00:44.08 spid38s     Database 'model' running the upgrade step from version 927 to version 928.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      193: 2026-02-11T08:00:44.0902143Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      194: 2026-02-11 08:00:44.08 spid35s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      195: 2026-02-11T08:00:44.0923532Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      196: 2026-02-11 08:00:44.08 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      197: 2026-02-11T08:00:44.1017719Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      198: 2026-02-11 08:00:44.09 spid38s     Database 'model' running the upgrade step from version 928 to version 929.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      199: 2026-02-11T08:00:44.1096840Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      200: 2026-02-11 08:00:44.10 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      201: 2026-02-11T08:00:44.1419238Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      202: 2026-02-11 08:00:44.13 spid38s     Database 'model' running the upgrade step from version 929 to version 930.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      203: 2026-02-11T08:00:44.1617341Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      204: 2026-02-11 08:00:44.15 spid38s     Database 'model' running the upgrade step from version 930 to version 931.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      205: 2026-02-11T08:00:44.1644343Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      206: 2026-02-11 08:00:44.16 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      207: 2026-02-11T08:00:44.1755349Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      208: 2026-02-11 08:00:44.17 spid38s     Database 'model' running the upgrade step from version 931 to version 932.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      209: 2026-02-11T08:00:44.1842588Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      210: 2026-02-11 08:00:44.18 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      211: 2026-02-11T08:00:44.1902698Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      212: 2026-02-11 08:00:44.18 spid38s     Database 'model' running the upgrade step from version 932 to version 933.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      213: 2026-02-11T08:00:44.2023214Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      214: 2026-02-11 08:00:44.19 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      215: 2026-02-11T08:00:44.2072882Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      216: 2026-02-11 08:00:44.20 spid38s     Database 'model' running the upgrade step from version 933 to version 934.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      217: 2026-02-11T08:00:44.2149683Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      218: 2026-02-11 08:00:44.21 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      219: 2026-02-11T08:00:44.2216717Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      220: 2026-02-11 08:00:44.21 spid38s     Database 'model' running the upgrade step from version 934 to version 935.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      221: 2026-02-11T08:00:44.2297310Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      222: 2026-02-11 08:00:44.22 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      223: 2026-02-11T08:00:44.2330472Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      224: 2026-02-11 08:00:44.23 spid38s     Database 'model' running the upgrade step from version 935 to version 936.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      225: 2026-02-11T08:00:44.2406944Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      226: 2026-02-11 08:00:44.23 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      227: 2026-02-11T08:00:44.2444673Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      228: 2026-02-11 08:00:44.24 spid38s     Database 'model' running the upgrade step from version 936 to version 937.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      229: 2026-02-11T08:00:44.2482287Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      230: 2026-02-11 08:00:44.24 Server      External governance manager initialized
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      231: 2026-02-11T08:00:44.2541187Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      232: 2026-02-11 08:00:44.25 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      233: 2026-02-11T08:00:44.2574953Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      234: 2026-02-11 08:00:44.25 spid38s     Database 'model' running the upgrade step from version 937 to version 938.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      235: 2026-02-11T08:00:44.2656574Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      236: 2026-02-11 08:00:44.26 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      237: 2026-02-11T08:00:44.2694984Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      238: 2026-02-11 08:00:44.26 spid38s     Database 'model' running the upgrade step from version 938 to version 939.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      239: 2026-02-11T08:00:44.2769545Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      240: 2026-02-11 08:00:44.27 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      241: 2026-02-11T08:00:44.2813876Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      242: 2026-02-11 08:00:44.27 spid38s     Database 'model' running the upgrade step from version 939 to version 940.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      243: 2026-02-11T08:00:44.2880579Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      244: 2026-02-11 08:00:44.28 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      245: 2026-02-11T08:00:44.2939346Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      246: 2026-02-11 08:00:44.29 spid38s     Database 'model' running the upgrade step from version 940 to version 941.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      247: 2026-02-11T08:00:44.3007523Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      248: 2026-02-11 08:00:44.29 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      249: 2026-02-11T08:00:44.3073526Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      250: 2026-02-11 08:00:44.30 spid38s     Database 'model' running the upgrade step from version 941 to version 942.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      251: 2026-02-11T08:00:44.3130279Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      252: 2026-02-11 08:00:44.31 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      253: 2026-02-11T08:00:44.3191470Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      254: 2026-02-11 08:00:44.31 spid38s     Database 'model' running the upgrade step from version 942 to version 943.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      255: 2026-02-11T08:00:44.3251678Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      256: 2026-02-11 08:00:44.32 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      257: 2026-02-11T08:00:44.3358000Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      258: 2026-02-11 08:00:44.33 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      259: 2026-02-11T08:00:44.3384745Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      260: 2026-02-11 08:00:44.33 spid45s     A self-generated certificate was successfully loaded for encryption.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      261: 2026-02-11T08:00:44.3400680Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      262: 2026-02-11 08:00:44.33 spid45s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      263: 2026-02-11T08:00:44.3415440Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      264: 2026-02-11 08:00:44.33 spid45s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      265: 2026-02-11T08:00:44.3440449Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      266: 2026-02-11 08:00:44.34 spid38s     Database 'model' running the upgrade step from version 943 to version 944.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      267: 2026-02-11T08:00:44.3457322Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      268: 2026-02-11 08:00:44.34 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      269: 2026-02-11T08:00:44.3474247Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      270: 2026-02-11 08:00:44.34 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      271: 2026-02-11T08:00:44.3490377Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      272: 2026-02-11 08:00:44.34 Server      Dedicated admin connection support was established for listening locally on port 1434.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      273: 2026-02-11T08:00:44.3543592Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      274: 2026-02-11 08:00:44.35 spid45s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      275: 2026-02-11T08:00:44.3558035Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      276: 2026-02-11 08:00:44.35 spid45s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      277: 2026-02-11T08:00:44.3577034Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      278: 2026-02-11 08:00:44.35 spid45s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      279: 2026-02-11T08:00:44.3592892Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      280: 2026-02-11 08:00:44.35 spid38s     Database 'model' running the upgrade step from version 944 to version 945.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      281: 2026-02-11T08:00:44.3748225Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      282: 2026-02-11 08:00:44.37 spid38s     Database 'model' running the upgrade step from version 945 to version 946.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      283: 2026-02-11T08:00:44.3804582Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      284: 2026-02-11 08:00:44.37 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      285: 2026-02-11T08:00:44.3902134Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      286: 2026-02-11 08:00:44.38 spid38s     Database 'model' running the upgrade step from version 946 to version 947.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      287: 2026-02-11T08:00:44.3993163Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      288: 2026-02-11 08:00:44.39 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      289: 2026-02-11T08:00:44.4042696Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      290: 2026-02-11 08:00:44.40 spid38s     Database 'model' running the upgrade step from version 947 to version 948.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      291: 2026-02-11T08:00:44.4164093Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      292: 2026-02-11 08:00:44.41 spid38s     Database 'model' running the upgrade step from version 948 to version 949.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      293: 2026-02-11T08:00:44.4178668Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      294: 2026-02-11 08:00:44.41 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      295: 2026-02-11T08:00:44.4263338Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      296: 2026-02-11 08:00:44.42 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      297: 2026-02-11T08:00:44.4275694Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      298: 2026-02-11 08:00:44.42 spid38s     Database 'model' running the upgrade step from version 949 to version 950.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      299: 2026-02-11T08:00:44.4371167Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      300: 2026-02-11 08:00:44.43 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      301: 2026-02-11T08:00:44.4381513Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      302: 2026-02-11 08:00:44.43 spid38s     Database 'model' running the upgrade step from version 950 to version 951.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      303: 2026-02-11T08:00:44.4508683Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      304: 2026-02-11 08:00:44.44 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      305: 2026-02-11T08:00:44.4549250Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      306: 2026-02-11 08:00:44.45 spid38s     Database 'model' running the upgrade step from version 951 to version 952.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      307: 2026-02-11T08:00:44.4660116Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      308: 2026-02-11 08:00:44.46 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      309: 2026-02-11T08:00:44.4700375Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      310: 2026-02-11 08:00:44.46 spid38s     Database 'model' running the upgrade step from version 952 to version 953.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      311: 2026-02-11T08:00:44.4785381Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      312: 2026-02-11 08:00:44.47 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      313: 2026-02-11T08:00:44.4862848Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      314: 2026-02-11 08:00:44.48 spid38s     Database 'model' running the upgrade step from version 953 to version 954.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      315: 2026-02-11T08:00:44.4990676Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      316: 2026-02-11 08:00:44.49 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      317: 2026-02-11T08:00:44.5004203Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      318: 2026-02-11 08:00:44.49 spid38s     Database 'model' running the upgrade step from version 954 to version 955.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      319: 2026-02-11T08:00:44.5113505Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      320: 2026-02-11 08:00:44.50 spid38s     Database 'model' running the upgrade step from version 955 to version 956.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      321: 2026-02-11T08:00:44.5134202Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      322: 2026-02-11 08:00:44.50 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      323: 2026-02-11T08:00:44.5320885Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      324: 2026-02-11 08:00:44.53 spid38s     Database 'model' running the upgrade step from version 956 to version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      325: 2026-02-11T08:00:44.5448153Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      326: 2026-02-11 08:00:44.54 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      327: 2026-02-11T08:00:44.5560552Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      328: 2026-02-11 08:00:44.55 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      329: 2026-02-11T08:00:44.5689359Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      330: 2026-02-11 08:00:44.56 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      331: 2026-02-11T08:00:44.5907389Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      332: 2026-02-11 08:00:44.58 spid35s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      333: 2026-02-11T08:00:44.6890465Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      334: 2026-02-11 08:00:44.68 spid35s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      335: 2026-02-11T08:00:44.6912178Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      336: 2026-02-11 08:00:44.68 spid35s     Starting up database 'model_msdb'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      337: 2026-02-11T08:00:44.7618707Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      338: 2026-02-11 08:00:44.75 spid35s     Converting database 'model_msdb' from version 927 to the current version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      339: 2026-02-11T08:00:44.7632689Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      340: 2026-02-11 08:00:44.76 spid35s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      341: 2026-02-11T08:00:44.7732803Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      342: 2026-02-11 08:00:44.77 spid35s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      343: 2026-02-11T08:00:44.8067444Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      344: 2026-02-11 08:00:44.80 spid35s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      345: 2026-02-11T08:00:44.8397191Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      346: 2026-02-11 08:00:44.83 spid35s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      347: 2026-02-11T08:00:44.8487328Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      348: 2026-02-11 08:00:44.84 spid35s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      349: 2026-02-11T08:00:44.8593485Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      350: 2026-02-11 08:00:44.85 spid35s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      351: 2026-02-11T08:00:44.8731634Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      352: 2026-02-11 08:00:44.87 spid35s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      353: 2026-02-11T08:00:44.8852558Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      354: 2026-02-11 08:00:44.88 spid35s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      355: 2026-02-11T08:00:44.8962095Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      356: 2026-02-11 08:00:44.89 spid35s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      357: 2026-02-11T08:00:44.9079267Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      358: 2026-02-11 08:00:44.90 spid35s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      359: 2026-02-11T08:00:44.9209607Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      360: 2026-02-11 08:00:44.91 spid35s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      361: 2026-02-11T08:00:44.9319324Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      362: 2026-02-11 08:00:44.93 spid35s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      363: 2026-02-11T08:00:44.9436472Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      364: 2026-02-11 08:00:44.94 spid35s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      365: 2026-02-11T08:00:44.9551729Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      366: 2026-02-11 08:00:44.95 spid35s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      367: 2026-02-11T08:00:44.9665079Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      368: 2026-02-11 08:00:44.96 spid35s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      369: 2026-02-11T08:00:44.9779573Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      370: 2026-02-11 08:00:44.97 spid35s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      371: 2026-02-11T08:00:45.0182153Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      372: 2026-02-11 08:00:45.01 spid35s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      373: 2026-02-11T08:00:45.0302925Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      374: 2026-02-11 08:00:45.02 spid35s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      375: 2026-02-11T08:00:45.0572229Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      376: 2026-02-11 08:00:45.05 spid35s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      377: 2026-02-11T08:00:45.0685212Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      378: 2026-02-11 08:00:45.06 spid35s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      379: 2026-02-11T08:00:45.0794923Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      380: 2026-02-11 08:00:45.07 spid35s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      381: 2026-02-11T08:00:45.0907077Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      382: 2026-02-11 08:00:45.08 spid35s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      383: 2026-02-11T08:00:45.1022303Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      384: 2026-02-11 08:00:45.09 spid35s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      385: 2026-02-11T08:00:45.1112005Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      386: 2026-02-11 08:00:45.10 spid35s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      387: 2026-02-11T08:00:45.1306909Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      388: 2026-02-11 08:00:45.12 spid35s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      389: 2026-02-11T08:00:45.1398055Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      390: 2026-02-11 08:00:45.13 spid35s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      391: 2026-02-11T08:00:45.1518455Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      392: 2026-02-11 08:00:45.14 spid35s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      393: 2026-02-11T08:00:45.1637523Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      394: 2026-02-11 08:00:45.15 spid35s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      395: 2026-02-11T08:00:45.1755567Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      396: 2026-02-11 08:00:45.17 spid35s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      397: 2026-02-11T08:00:45.2165329Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      398: 2026-02-11 08:00:45.21 spid35s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      399: 2026-02-11T08:00:45.2776630Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      400: 2026-02-11 08:00:45.27 spid35s     Resource governor reconfiguration succeeded.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      401: 2026-02-11T08:00:45.2787771Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      402: 2026-02-11 08:00:45.27 spid48s     Attribute synchronization initialized
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      403: 2026-02-11T08:00:45.2804948Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      404: 2026-02-11 08:00:45.27 spid35s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      405: 2026-02-11T08:00:45.2817361Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      406: 2026-02-11 08:00:45.27 spid48s     Attribute synchronization manager initialized
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      407: 2026-02-11T08:00:45.2831337Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      408: 2026-02-11 08:00:45.27 spid35s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      409: 2026-02-11T08:00:45.3100627Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      410: 2026-02-11 08:00:45.30 spid35s     SQL Trace ID 1 was started by login "sa".
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      411: 2026-02-11T08:00:45.3229926Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      412: 2026-02-11 08:00:45.31 spid35s     Server name is '8e3da3238140'. This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      413: 2026-02-11T08:00:45.3511777Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      414: 2026-02-11 08:00:45.34 spid38s     Clearing tempdb database.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      415: 2026-02-11T08:00:45.3542855Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      416: 2026-02-11 08:00:45.34 spid54s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      417: 2026-02-11T08:00:45.3572670Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      418: 2026-02-11 08:00:45.35 spid57s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      419: 2026-02-11T08:00:45.3605400Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      420: 2026-02-11 08:00:45.35 spid54s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      421: 2026-02-11T08:00:45.3614849Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      422: 2026-02-11 08:00:45.35 spid57s     Starting up database 'msdb'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      423: 2026-02-11T08:00:45.4408419Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      424: 2026-02-11 08:00:45.43 spid57s     Converting database 'msdb' from version 927 to the current version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      425: 2026-02-11T08:00:45.4423818Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      426: 2026-02-11 08:00:45.43 spid57s     Database 'msdb' running the upgrade step from version 927 to version 928.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      427: 2026-02-11T08:00:45.4737925Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      428: 2026-02-11 08:00:45.46 spid57s     Database 'msdb' running the upgrade step from version 928 to version 929.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      429: 2026-02-11T08:00:45.4820880Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      430: 2026-02-11 08:00:45.47 spid38s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      431: 2026-02-11T08:00:45.4837860Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      432: 2026-02-11 08:00:45.47 spid38s     Starting up database 'tempdb'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      433: 2026-02-11T08:00:45.5188706Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      434: 2026-02-11 08:00:45.51 spid57s     Database 'msdb' running the upgrade step from version 929 to version 930.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      435: 2026-02-11T08:00:45.5380177Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      436: 2026-02-11 08:00:45.53 spid57s     Database 'msdb' running the upgrade step from version 930 to version 931.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      437: 2026-02-11T08:00:45.5397827Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      438: 2026-02-11 08:00:45.53 spid38s     The tempdb database has 1 data file(s).
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      439: 2026-02-11T08:00:45.5478378Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      440: 2026-02-11 08:00:45.54 spid54s     The Service Broker endpoint is in disabled or stopped state.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      441: 2026-02-11T08:00:45.5494991Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      442: 2026-02-11 08:00:45.54 spid54s     The Database Mirroring endpoint is in disabled or stopped state.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      443: 2026-02-11T08:00:45.5620828Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      444: 2026-02-11 08:00:45.55 spid54s     Service Broker manager has started.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      445: 2026-02-11T08:00:45.5697175Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      446: 2026-02-11 08:00:45.56 spid57s     Database 'msdb' running the upgrade step from version 931 to version 932.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      447: 2026-02-11T08:00:45.5803098Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      448: 2026-02-11 08:00:45.57 spid57s     Database 'msdb' running the upgrade step from version 932 to version 933.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      449: 2026-02-11T08:00:45.5924823Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      450: 2026-02-11 08:00:45.58 spid57s     Database 'msdb' running the upgrade step from version 933 to version 934.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      451: 2026-02-11T08:00:45.6045535Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      452: 2026-02-11 08:00:45.59 spid57s     Database 'msdb' running the upgrade step from version 934 to version 935.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      453: 2026-02-11T08:00:45.6146994Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      454: 2026-02-11 08:00:45.61 spid57s     Database 'msdb' running the upgrade step from version 935 to version 936.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      455: 2026-02-11T08:00:45.6266442Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      456: 2026-02-11 08:00:45.62 spid57s     Database 'msdb' running the upgrade step from version 936 to version 937.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      457: 2026-02-11T08:00:45.6382196Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      458: 2026-02-11 08:00:45.63 spid57s     Database 'msdb' running the upgrade step from version 937 to version 938.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      459: 2026-02-11T08:00:45.6496208Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      460: 2026-02-11 08:00:45.64 spid57s     Database 'msdb' running the upgrade step from version 938 to version 939.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      461: 2026-02-11T08:00:45.6596416Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      462: 2026-02-11 08:00:45.65 spid57s     Database 'msdb' running the upgrade step from version 939 to version 940.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      463: 2026-02-11T08:00:45.6708358Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      464: 2026-02-11 08:00:45.66 spid57s     Database 'msdb' running the upgrade step from version 940 to version 941.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      465: 2026-02-11T08:00:45.6797517Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      466: 2026-02-11 08:00:45.67 spid57s     Database 'msdb' running the upgrade step from version 941 to version 942.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      467: 2026-02-11T08:00:45.6916310Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      468: 2026-02-11 08:00:45.68 spid57s     Database 'msdb' running the upgrade step from version 942 to version 943.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      469: 2026-02-11T08:00:45.7334817Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      470: 2026-02-11 08:00:45.72 spid57s     Database 'msdb' running the upgrade step from version 943 to version 944.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      471: 2026-02-11T08:00:45.7460589Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      472: 2026-02-11 08:00:45.74 spid57s     Database 'msdb' running the upgrade step from version 944 to version 945.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      473: 2026-02-11T08:00:45.7724807Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      474: 2026-02-11 08:00:45.76 spid57s     Database 'msdb' running the upgrade step from version 945 to version 946.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      475: 2026-02-11T08:00:45.7847921Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      476: 2026-02-11 08:00:45.78 spid57s     Database 'msdb' running the upgrade step from version 946 to version 947.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      477: 2026-02-11T08:00:45.8027760Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      478: 2026-02-11 08:00:45.79 spid57s     Database 'msdb' running the upgrade step from version 947 to version 948.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      479: 2026-02-11T08:00:45.8151381Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      480: 2026-02-11 08:00:45.81 spid57s     Database 'msdb' running the upgrade step from version 948 to version 949.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      481: 2026-02-11T08:00:45.8287660Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      482: 2026-02-11 08:00:45.82 spid57s     Database 'msdb' running the upgrade step from version 949 to version 950.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      483: 2026-02-11T08:00:45.8406712Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      484: 2026-02-11 08:00:45.83 spid57s     Database 'msdb' running the upgrade step from version 950 to version 951.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      485: 2026-02-11T08:00:45.8626984Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      486: 2026-02-11 08:00:45.85 spid57s     Database 'msdb' running the upgrade step from version 951 to version 952.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      487: 2026-02-11T08:00:45.8748384Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      488: 2026-02-11 08:00:45.87 spid57s     Database 'msdb' running the upgrade step from version 952 to version 953.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      489: 2026-02-11T08:00:45.9030462Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      490: 2026-02-11 08:00:45.89 spid57s     Database 'msdb' running the upgrade step from version 953 to version 954.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      491: 2026-02-11T08:00:45.9151021Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      492: 2026-02-11 08:00:45.91 spid57s     Database 'msdb' running the upgrade step from version 954 to version 955.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      493: 2026-02-11T08:00:45.9275093Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      494: 2026-02-11 08:00:45.92 spid57s     Database 'msdb' running the upgrade step from version 955 to version 956.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      495: 2026-02-11T08:00:45.9583467Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      496: 2026-02-11 08:00:45.95 spid57s     Database 'msdb' running the upgrade step from version 956 to version 957.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      497: 2026-02-11T08:00:46.0295269Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      498: 2026-02-11 08:00:46.02 spid35s     Recovery is complete. This is an informational message only. No user action is required.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      499: 2026-02-11T08:00:46.0444662Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      500: 2026-02-11 08:00:46.04 spid46s     The default language (LCID 0) has been set for engine and full-text services.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      501: 2026-02-11T08:00:46.3604347Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      502: 2026-02-11 08:00:46.35 spid46s     The tempdb database has 8 data file(s).
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Resource 'sql' is ready.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      5: 2026-02-11T08:00:57.2776532Z Waiting for resource ready to execute for 'sql'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Publishing ResourceReadyEvent for 'sql'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      503: 2026-02-11T08:00:57.2818349Z Creating database 'sqldata'
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Waiting for ResourceReadyEvent for 'sql'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      504: 2026-02-11T08:00:57.2145381Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      505: 2026-02-11 08:00:57.21 Logon       Error: 18456, Severity: 14, State: 38.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      506: 2026-02-11T08:00:57.2170496Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      507: 2026-02-11 08:00:57.21 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'sqldata'. [CLIENT: 172.19.0.1]
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      508: 2026-02-11T08:00:57.5625832Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      509: 2026-02-11 08:00:57.55 spid63      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      510: 2026-02-11T08:00:57.5646147Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      511: 2026-02-11 08:00:57.56 spid63      Starting up database 'sqldata'.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      512: 2026-02-11T08:00:57.5666432Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      513: 2026-02-11 08:00:57.56 spid63      RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      514: 2026-02-11T08:00:57.5701543Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      515: 2026-02-11 08:00:57.56 spid63      RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      516: 2026-02-11T08:00:57.6067119Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      517: 2026-02-11 08:00:57.60 spid63      Parallel redo is started for database 'sqldata' with worker pool size [6].
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      518: 2026-02-11T08:00:57.6378719Z 
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      519: 2026-02-11 08:00:57.63 spid63      Parallel redo is shutdown for database 'sqldata' with worker pool size [6].
+info: SupportTicketApi.AppHost.Resources.sql[0]
+      520: 2026-02-11T08:00:57.7602934Z Database 'sqldata' created successfully
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      ResourceReadyEvent for 'sql' completed.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Publishing the result of ResourceReadyEvent for 'sql'.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      6: 2026-02-11T08:00:57.7620404Z Finished waiting for resource 'sql'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Resource 'sqldata' is ready.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Publishing ResourceReadyEvent for 'sqldata'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Waiting for ResourceReadyEvent for 'sqldata'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      ResourceReadyEvent for 'sqldata' completed.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Publishing the result of ResourceReadyEvent for 'sqldata'.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      7: 2026-02-11T08:01:07.2549493Z Waiting for resource ready to execute for 'sqldata'.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      8: 2026-02-11T08:01:07.2549894Z Finished waiting for resource 'sqldata'.
+info: Aspire.Hosting.DistributedApplication[0]
+      Distributed application started. Press Ctrl+C to shut down.
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Waiting for resource 'api' to enter the 'Healthy' state.
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource api/api-vkwbrmem changed state: Starting
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Resource api/api-vkwbrmem changed state: Starting -> Running
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Starting health monitoring for resource 'api'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Resource 'api' health checks to monitor: api_https_/health_200_check
+info: SupportTicketApi.AppHost.Resources.api[0]
+      9: 2026-02-11T08:01:08.5530000Z info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      10: 2026-02-11T08:01:08.5540000Z       Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: SupportTicketApi.AppHost.Resources.api[0]
+      11: 2026-02-11T08:01:08.5550000Z       SELECT 1
+info: SupportTicketApi.AppHost.Resources.api[0]
+      12: 2026-02-11T08:01:08.6810000Z info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      13: 2026-02-11T08:01:08.6810000Z       Executed DbCommand (115ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: SupportTicketApi.AppHost.Resources.api[0]
+      14: 2026-02-11T08:01:08.6820000Z       
+info: SupportTicketApi.AppHost.Resources.api[0]
+      15: 2026-02-11T08:01:08.6840000Z       IF EXISTS
+info: SupportTicketApi.AppHost.Resources.api[0]
+      16: 2026-02-11T08:01:08.6850000Z           (SELECT *
+info: SupportTicketApi.AppHost.Resources.api[0]
+      17: 2026-02-11T08:01:08.6860000Z            FROM [sys].[objects] o
+info: SupportTicketApi.AppHost.Resources.api[0]
+      18: 2026-02-11T08:01:08.6870000Z            WHERE [o].[type] = 'U'
+info: SupportTicketApi.AppHost.Resources.api[0]
+      19: 2026-02-11T08:01:08.6880000Z            AND [o].[is_ms_shipped] = 0
+info: SupportTicketApi.AppHost.Resources.api[0]
+      20: 2026-02-11T08:01:08.6890000Z            AND NOT EXISTS (SELECT *
+info: SupportTicketApi.AppHost.Resources.api[0]
+      21: 2026-02-11T08:01:08.6900000Z                FROM [sys].[extended_properties] AS [ep]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      22: 2026-02-11T08:01:08.6910000Z                WHERE [ep].[major_id] = [o].[object_id]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      23: 2026-02-11T08:01:08.6920000Z                    AND [ep].[minor_id] = 0
+info: SupportTicketApi.AppHost.Resources.api[0]
+      24: 2026-02-11T08:01:08.6930000Z                    AND [ep].[class] = 1
+info: SupportTicketApi.AppHost.Resources.api[0]
+      25: 2026-02-11T08:01:08.6950000Z                    AND [ep].[name] = N'microsoft_database_tools_support'
+info: SupportTicketApi.AppHost.Resources.api[0]
+      26: 2026-02-11T08:01:08.6960000Z           )
+info: SupportTicketApi.AppHost.Resources.api[0]
+      27: 2026-02-11T08:01:08.6980000Z       )
+info: SupportTicketApi.AppHost.Resources.api[0]
+      28: 2026-02-11T08:01:08.6990000Z       SELECT 1 ELSE SELECT 0
+info: SupportTicketApi.AppHost.Resources.api[0]
+      29: 2026-02-11T08:01:08.8060000Z info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      30: 2026-02-11T08:01:08.8060000Z       Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: SupportTicketApi.AppHost.Resources.api[0]
+      31: 2026-02-11T08:01:08.8070000Z       CREATE TABLE [Tickets] (
+info: SupportTicketApi.AppHost.Resources.api[0]
+      32: 2026-02-11T08:01:08.8080000Z           [Id] int NOT NULL IDENTITY,
+info: SupportTicketApi.AppHost.Resources.api[0]
+      33: 2026-02-11T08:01:08.8100000Z           [Title] nvarchar(max) NOT NULL,
+info: SupportTicketApi.AppHost.Resources.api[0]
+      34: 2026-02-11T08:01:08.8100000Z           [Description] nvarchar(max) NOT NULL,
+info: SupportTicketApi.AppHost.Resources.api[0]
+      35: 2026-02-11T08:01:08.8110000Z           CONSTRAINT [PK_Tickets] PRIMARY KEY ([Id])
+info: SupportTicketApi.AppHost.Resources.api[0]
+      36: 2026-02-11T08:01:08.8120000Z       );
+info: SupportTicketApi.AppHost.Resources.api[0]
+      37: 2026-02-11T08:01:09.0570000Z info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      38: 2026-02-11T08:01:09.0580000Z       Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: SupportTicketApi.AppHost.Resources.api[0]
+      39: 2026-02-11T08:01:09.0590000Z       SELECT CASE
+info: SupportTicketApi.AppHost.Resources.api[0]
+      40: 2026-02-11T08:01:09.0590000Z           WHEN EXISTS (
+info: SupportTicketApi.AppHost.Resources.api[0]
+      41: 2026-02-11T08:01:09.0610000Z               SELECT 1
+info: SupportTicketApi.AppHost.Resources.api[0]
+      42: 2026-02-11T08:01:09.0610000Z               FROM [Tickets] AS [t]) THEN CAST(1 AS bit)
+info: SupportTicketApi.AppHost.Resources.api[0]
+      43: 2026-02-11T08:01:09.0620000Z           ELSE CAST(0 AS bit)
+info: SupportTicketApi.AppHost.Resources.api[0]
+      44: 2026-02-11T08:01:09.0620000Z       END
+info: SupportTicketApi.AppHost.Resources.api[0]
+      45: 2026-02-11T08:01:09.2060000Z info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      46: 2026-02-11T08:01:09.2070000Z       Executed DbCommand (21ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+info: SupportTicketApi.AppHost.Resources.api[0]
+      47: 2026-02-11T08:01:09.2070000Z       SET IMPLICIT_TRANSACTIONS OFF;
+info: SupportTicketApi.AppHost.Resources.api[0]
+      48: 2026-02-11T08:01:09.2090000Z       SET NOCOUNT ON;
+info: SupportTicketApi.AppHost.Resources.api[0]
+      49: 2026-02-11T08:01:09.2100000Z       INSERT INTO [Tickets] ([Description], [Title])
+info: SupportTicketApi.AppHost.Resources.api[0]
+      50: 2026-02-11T08:01:09.2110000Z       OUTPUT INSERTED.[Id]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      51: 2026-02-11T08:01:09.2110000Z       VALUES (@p0, @p1);
+info: SupportTicketApi.AppHost.Resources.api[0]
+      52: 2026-02-11T08:01:09.4560000Z info: Microsoft.Hosting.Lifetime[14]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      53: 2026-02-11T08:01:09.4570000Z       Now listening on: https://localhost:61290
+info: SupportTicketApi.AppHost.Resources.api[0]
+      54: 2026-02-11T08:01:09.4580000Z info: Microsoft.Hosting.Lifetime[14]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      55: 2026-02-11T08:01:09.4590000Z       Now listening on: http://localhost:61291
+info: SupportTicketApi.AppHost.Resources.api[0]
+      56: 2026-02-11T08:01:09.5020000Z info: Microsoft.Hosting.Lifetime[0]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      57: 2026-02-11T08:01:09.5030000Z       Application started. Press Ctrl+C to shut down.
+info: SupportTicketApi.AppHost.Resources.api[0]
+      58: 2026-02-11T08:01:09.5050000Z info: Microsoft.Hosting.Lifetime[0]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      59: 2026-02-11T08:01:09.5050000Z       Hosting environment: Development
+info: SupportTicketApi.AppHost.Resources.api[0]
+      60: 2026-02-11T08:01:09.5070000Z info: Microsoft.Hosting.Lifetime[0]
+info: SupportTicketApi.AppHost.Resources.api[0]
+      61: 2026-02-11T08:01:09.5070000Z       Content root path: C:\grmn\learning\Aspire\aspire-docs-samples\SupportTicketApi\SupportTicketApi.Api
+info: Polly[3]
+      Execution attempt. Source: '-standard//Standard-Retry', Operation Key: '', Result: '200', Handled: 'False', Attempt: '0', Execution Time: 1409.1574ms
+info: Polly[2]
+      Resilience pipeline executed. Source: '-standard/', Operation Key: '', Result: '200', Execution Time: 1426.4031ms
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Resource 'api' is ready.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Publishing ResourceReadyEvent for 'api'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Waiting for ResourceReadyEvent for 'api'.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      ResourceReadyEvent for 'api' completed.
+dbug: Aspire.Hosting.Health.ResourceHealthCheckService[0]
+      Publishing the result of ResourceReadyEvent for 'api'.
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Waiting for resource ready to execute for 'api'.
+dbug: Aspire.Hosting.ApplicationModel.ResourceNotificationService[0]
+      Finished waiting for resource 'api'.
+info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+      Start processing HTTP request GET http://localhost:52848/api/SupportTickets
+info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+      Sending HTTP request GET http://localhost:52848/api/SupportTickets
+info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+      Received HTTP response headers after 95.0748ms - 200
+info: Polly[3]
+      Execution attempt. Source: '-standard//Standard-Retry', Operation Key: '', Result: '200', Handled: 'False', Attempt: '0', Execution Time: 99.2765ms
+info: Polly[2]
+      Resilience pipeline executed. Source: '-standard/', Operation Key: '', Result: '200', Execution Time: 99.3859ms
+info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+      End processing HTTP request after 102.5455ms - 200
+dbug: Aspire.Hosting.FileSystemService[0]
+      Cleaning up 1 remaining temporary files/directories
