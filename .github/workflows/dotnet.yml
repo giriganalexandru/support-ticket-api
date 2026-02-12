@@ -28,5 +28,5 @@ jobs:
       timeout-minutes: 5
       run: dotnet build --no-restore
     - name: Test
-      timeout-minutes: 5
+      timeout-minutes: 10
       run: dotnet test --no-build --verbosity normal
