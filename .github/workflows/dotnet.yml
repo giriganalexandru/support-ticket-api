@@ -21,13 +21,9 @@ jobs:
       with:
         dotnet-version: 9.0.x
         cache: true
-        cache-dependency-path: '**/packages.lock.json'
     - name: Install Aspire Workload
       timeout-minutes: 5
       run: dotnet workload install aspire
-    - name: Restore dependencies
-      timeout-minutes: 5
-      run: dotnet restore
     - name: Build
       timeout-minutes: 5
       run: dotnet build --no-restore
